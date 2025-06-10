@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM Student Chapter BVDUDET NM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Circuit Background -->
+        <div class="circuit-background"></div>
+        
+        <!-- Tech Overlay -->
+        <div class="tech-overlay">
+            <div class="scanning-line"></div>
+            <div class="grid-overlay"></div>
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+            <div class="floating-element floating-3"></div>
+        </div>
+        
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle">
+            <div class="icon sun-icon">☀</div>
+            <div class="icon moon-icon">🌙</div>
+        </button>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="tech-glass header-content">
+                    <h1 class="main-title">ACM Student Chapter BVDUDET NM</h1>
+                    <p class="subtitle">Welcome to the future of technology. Experience our advanced computing interface.</p>
+                </div>
+            </div>
+            
+            <!-- Navigation -->
+            <div class="navigation" id="navigation">
+                <button class="nav-button active" data-page="home">
+                    <div class="nav-icon">⌂</div>
+                    <span>Home</span>
+                </button>
+                <button class="nav-button" data-page="events">
+                    <div class="nav-icon">📅</div>
+                    <span>Events</span>
+                </button>
+                <button class="nav-button" data-page="blogs">
+                    <div class="nav-icon">📝</div>
+                    <span>Blogs</span>
+                </button>
+                <button class="nav-button" data-page="acm-w">
+                    <div class="nav-icon">👥</div>
+                    <span>ACM-W</span>
+                </button>
+                <button class="nav-button" data-page="faq">
+                    <div class="nav-icon">❓</div>
+                    <span>FAQ</span>
+                </button>
+                <button class="nav-button" data-page="contact">
+                    <div class="nav-icon">📞</div>
+                    <span>Contact</span>
+                </button>
+            </div>
+            
+            <!-- Page Content -->
+            <div id="page-content">
+                <!-- Home Page Content -->
+                <div id="home-page" class="page active">
+                    <div class="welcome-message tech-glass">
+                        <h2>Welcome to ACM Student Chapter</h2>
+                        <p>Explore the world of computing and technology with us!</p>
+                    </div>
+                </div>
+                
+                <!-- Events Page Content -->
+                <div id="events-page" class="page">
+                    <div class="events-container">
+                        <div class="event-card tech-glass">
+                            <h3>Tech Innovation Summit 2024</h3>
+                            <p class="event-date">📅 March 15, 2024</p>
+                            <p class="event-time">🕒 10:00 AM - 6:00 PM</p>
+                            <p class="event-location">📍 BVDU Auditorium</p>
+                            <p>Join us for a day of cutting-edge technology discussions.</p>
+                            <button class="holo-button">Register Now</button>
+                        </div>
+                        <div class="event-card tech-glass">
+                            <h3>ACM-W Women in Tech Workshop</h3>
+                            <p class="event-date">📅 March 22, 2024</p>
+                            <p class="event-time">🕒 2:00 PM - 5:00 PM</p>
+                            <p class="event-location">📍 Computer Lab A</p>
+                            <p>Empowering women in technology through hands-on workshops.</p>
+                            <button class="holo-button">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blogs Page Content -->
+                <div id="blogs-page" class="page">
+                    <div class="blogs-container">
+                        <article class="blog-card tech-glass">
+                            <h3>The Future of Artificial Intelligence in Education</h3>
+                            <p class="blog-meta">👤 Dr. Sarah Johnson | 📅 March 10, 2024</p>
+                            <p>Exploring how AI is revolutionizing the way we learn and teach in modern educational institutions.</p>
+                            <button class="holo-button">Read More</button>
+                        </article>
+                        <article class="blog-card tech-glass">
+                            <h3>Building Scalable Web Applications with React</h3>
+                            <p class="blog-meta">👤 Mike Chen | 📅 March 8, 2024</p>
+                            <p>A comprehensive guide to creating maintainable and scalable React applications.</p>
+                            <button class="holo-button">Read More</button>
+                        </article>
+                    </div>
+                </div>
+                
+                <!-- ACM-W Page Content -->
+                <div id="acm-w-page" class="page">
+                    <div class="acm-w-content tech-glass">
+                        <h2>ACM-W - Empowering Women in Computing</h2>
+                        <p>ACM-W supports, celebrates, and advocates for the full engagement of women in all aspects of the computing field.</p>
+                        <div class="initiatives">
+                            <div class="initiative">
+                                <h4>🤝 Mentorship Program</h4>
+                                <p>Connect with industry professionals and senior students for career guidance.</p>
+                            </div>
+                            <div class="initiative">
+                                <h4>💻 Technical Workshops</h4>
+                                <p>Hands-on workshops covering various programming languages and technologies.</p>
+                            </div>
+                        </div>
+                        <button class="holo-button">Join ACM-W</button>
+                    </div>
+                </div>
+                
+                <!-- FAQ Page Content -->
+                <div id="faq-page" class="page">
+                    <div class="faq-container">
+                        <div class="faq-item tech-glass">
+                            <h3 class="faq-question">What is ACM Student Chapter?</h3>
+                            <div class="faq-answer">
+                                <p>ACM Student Chapter is a local student organization affiliated with the Association for Computing Machinery (ACM), the world's largest educational and scientific computing society.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item tech-glass">
+                            <h3 class="faq-question">Who can join the ACM Student Chapter?</h3>
+                            <div class="faq-answer">
+                                <p>Any student enrolled at BVDU with an interest in computing, technology, or related fields can join our chapter.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Page Content -->
+                <div id="contact-page" class="page">
+                    <div class="contact-container">
+                        <div class="contact-form tech-glass">
+                            <h2>Contact Us</h2>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="membership">Membership Inquiry</option>
+                                        <option value="events">Event Information</option>
+                                        <option value="general">General Question</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="holo-button">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="contact-info tech-glass">
+                            <h3>Contact Information</h3>
+                            <div class="contact-item">
+                                <span>📧 acm@bvdudet.edu.in</span>
+                            </div>
+                            <div class="contact-item">
+                                <span>📞 +91 98765 43210</span>
+                            </div>
+                            <div class="contact-item">
+                                <span>📍 BVDU DET, Navi Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- AI Robot -->
+        <div id="ai-robot" class="ai-robot">
+            <div class="robot-head">
+                <div class="robot-screen">
+                    <div class="robot-eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="robot-body">
+                <span class="acm-text">ACM</span>
+            </div>
+            <div class="robot-arm left-arm"></div>
+            <div class="robot-arm right-arm"></div>
+            <div class="robot-leg left-leg"></div>
+            <div class="robot-leg right-leg"></div>
+        </div>
+        
+        <!-- Corner decorations -->
+        <div class="corner-decoration corner-tl"></div>
+        <div class="corner-decoration corner-tr"></div>
+        <div class="corner-decoration corner-bl"></div>
+        <div class="corner-decoration corner-br"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

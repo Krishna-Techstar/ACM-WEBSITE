@@ -1,4 +1,3 @@
-
 export const CircuitBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">

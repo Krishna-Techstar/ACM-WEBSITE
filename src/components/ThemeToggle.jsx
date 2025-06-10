@@ -5,7 +5,6 @@ export const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    // Check for saved theme preference or default to dark
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -35,7 +34,6 @@ export const ThemeToggle = () => {
       aria-label="Toggle theme"
     >
       <div className="relative w-6 h-6">
-        {/* Sun icon */}
         <div className={`absolute inset-0 transition-all duration-300 ${isDark ? 'opacity-0 rotate-180 scale-0' : 'opacity-100 rotate-0 scale-100'}`}>
           <svg className="w-6 h-6 text-tech-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="5"/>
@@ -43,7 +41,6 @@ export const ThemeToggle = () => {
           </svg>
         </div>
         
-        {/* Moon icon */}
         <div className={`absolute inset-0 transition-all duration-300 ${isDark ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-180 scale-0'}`}>
           <svg className="w-6 h-6 text-tech-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
@@ -51,9 +48,7 @@ export const ThemeToggle = () => {
         </div>
       </div>
       
-      {/* Glow effect */}
       <div className="absolute inset-0 rounded-full bg-tech-blue opacity-0 group-hover:opacity-20 transition-opacity duration-300 animate-glow-pulse"></div>
     </button>
   );
 };
-
